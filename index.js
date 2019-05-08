@@ -13,7 +13,7 @@ app.get('/get_status', (req, res) => {
 });
 
 const hostname = '127.0.0.1';
-const port = 3000 | process.env.PORT;
+const port = 3000 || process.env.PORT;
 app.listen(port, () => {
   console.log(`Serving running at http://${hostname}:${port}/`);
 });
